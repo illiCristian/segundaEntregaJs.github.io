@@ -1,0 +1,30 @@
+.container_sobreMi{
+   
+    .row{
+        justify-content: center;
+        border-radius: 10px;
+        
+        width: auto;
+        height: auto;
+    }
+    img{
+        border-radius: 10px;
+        border: solid;
+        width: 310px;
+        float: left;
+        margin-right: 15px;
+    }
+    .parrafo{
+        z-index: 1;
+        width: 540px;
+        height: auto;
+        padding: 20px 20px;
+        font-size: 15px;
+        line-height: 1.5;
+        background: #fff;
+        box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
+        border-radius: 5px;
+        text-align: justify;
+    }
+    
+}
