@@ -1,3 +1,8 @@
+.btn-carrito-2{
+  position: relative;
+  right: 55px;
+  bottom: 14px;
+}
 .boton-carrito-fa{
   height: 40px;
   width: 40px;
@@ -214,6 +219,14 @@ header {
     font-size: 16px;
   }
 }
+@media(min-width: 800px){
+  .btn-carrito-2{
+    position: relative;
+    right: 55px;
+    bottom: 14px;
+    visibility: hidden;
+  }
+}
 @media (max-width: 800px) {
   .menu__items li a {
     padding: 4px 13px;
@@ -234,6 +247,12 @@ header {
     right: 20px;
     cursor: pointer;
     margin-top: 8px;
+  }
+  .menu-icon-2{
+    display: block;
+    position: relative;
+    bottom: 10px;
+    right: 45px;
   }
   .menu ul {
     display: block;

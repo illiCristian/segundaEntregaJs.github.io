@@ -2,6 +2,7 @@ const contenedorCarrito = document.getElementById("carrito-contenedor");
 const borrarItemCarrito = document.getElementById("trash");
 const vaciarCarrito = document.getElementById("vaciar-carrito");
 const contadorCarrito = document.getElementById("contador");
+const contadorCarrito1 = document.getElementById("contador1");
 const precioTotal = document.getElementById("precio-total");
 
 let carrito = [];
@@ -105,7 +106,7 @@ const actualizarCarrito = () => {
      carritoActualizado.innerHTML =`
      <div class="card mb-3" style="max-width: 600px;">
          <div class="row g-0">
-             <div class="col-md-4">
+             <div class="col-md-4 align-items-center">
                 <img src="${prod.img}" class="img-fluid rounded-start" alt="...">
     </div>
         <div class="col-md-8">
@@ -130,6 +131,7 @@ const actualizarCarrito = () => {
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
     contadorCarrito.innerText = carrito.length;
+    contadorCarrito1.innerText= carrito.length;
     precioTotal.innerText = carrito.reduce((acum, el) => acum + el.precio,0);
 }
 
