@@ -1,3 +1,13 @@
+
+.div-carrito1{
+  padding: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  bottom: 3px;
+  
+}
 .btn-carrito-2{
   position: relative;
   right: 55px;
@@ -14,8 +24,14 @@
 }
 
 .card-carrito{
-  height: 250px  !important;
-}
+   padding-right: 10px; 
+   padding-top: 10px;
+   
+} 
+.card-carrito .div-carrito1{
+  margin: 0px;
+} 
+
 #boton-carrito{
   border: none;
   color: royalblue;
